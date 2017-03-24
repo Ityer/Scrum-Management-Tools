@@ -1,0 +1,20 @@
+.container{
+	width: 80%;
+	max-width: 1000px;
+}
+
+h1{
+	text-align:center;
+}
+
+.project{
+	padding: 10px;
+	margin-bottom:5%;
+	border: 5px solid black;
+	border-radius:20px;
+}
+
+.project:hover {
+    background: #e1e1e1;
+    border: 5px solid #d0d0d0;
+}
