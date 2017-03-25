@@ -1,6 +1,10 @@
+html, body {
+    height: 100%;
+}
+
 .container{
-	width: 80%;
-	max-width: 1000px;
+    width: 100%;
+	position: absolute;
 }
 
 h1{
@@ -17,4 +21,46 @@ h1{
 .project:hover {
     background: #e1e1e1;
     border: 5px solid #d0d0d0;
+}
+
+.col-md-5{
+	display:block;
+	border:1px solid black;
+	width: 19.2%;
+	text-align:center;
+	margin-right:1%;
+}
+
+#rightcol{
+margin-right:0;	
+}
+
+.item{
+	width:99%;
+	display:inline-block;
+	border: 1px solid black;
+    word-break: break-all;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 5%;
+}
+
+.item p{
+	text-align:left;
+    word-break: initial;
+}
+
+.item h5{
+	text-align:left;
+}
+
+.r{
+	float:right;
+	margin-left: 1%;
+}
+
+.editBtn{
+	float:right;
+	font-weight:bold;
+	font-size:1.5em;
 }
