@@ -20,25 +20,20 @@
                 <button class="r" type="button">Progress</button>
 			<script>document.write("<h1>"+strip(project.title)+" - Sprint: "+strip(project.sprint)+"<\/h1>");</script>
             <br>
-			<div class="col-md-5">
-				<h1>Stories</h1>
-				<script>printStories()</script>
+			<div id="Stories" class="col-md-5">
+				<h1>Stories</h1><script>printStories()</script>
 			</div>
-			<div class="col-md-5">
-				<h1>To Do</h1>
-				<script>printTasks(1,project.sprint)</script>
+			<div id="ToDo" class="col-md-5">
+				<h1>To Do</h1><script>printTasks(1,project.sprint)</script>
 			</div>
-			<div class="col-md-5">
-				<h1>Doing</h1>
-				<script>printTasks(2,project.sprint)</script>
+			<div id="Doing" class="col-md-5">
+				<h1>Doing</h1><script>printTasks(2,project.sprint)</script>
 			</div>						
-			<div class="col-md-5">
-				<h1>Testing</h1>
-				<script>printTasks(3,project.sprint)</script>
+			<div id="Tsting" class="col-md-5">
+				<h1>Testing</h1><script>printTasks(3,project.sprint)</script>
 			</div>
-			<div id="rightcol" class="col-md-5">
-				<h1>Done</h1>
-				<script>printTasks(4,project.sprint)</script>
+			<div id="Done" class="col-md-5">
+				<h1>Done</h1><script>printTasks(4,project.sprint)</script>
 			</div>
         </div>
 		<script>
