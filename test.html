@@ -14,10 +14,8 @@
         <br>
         <div class="container">
                 <button  type="button" onclick="saveExit();">Save and Exit</button>
-                <button class="r" type="button">Tasks</button>
-                <button class="r" type="button">Report</button>
-                <button class="r" type="button">Daily Meeting</button>
-                <button class="r" type="button">Progress</button>
+                <button class="r" onclick="RemoveTest();" type="button">Delete Last</button>
+                <button class="r" onclick="AddTest();" type="button">Add</button>
 			<script>document.write("<h1>"+strip(project.title)+" - Sprint: "+strip(project.sprint)+"<\/h1>");</script>
             <br>
 			<div id="Stories" class="col-md-5">

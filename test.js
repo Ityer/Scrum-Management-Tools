@@ -43,7 +43,7 @@ function save(){
 	localStorage.setItem('projects',JSON.stringify(listOfProjects));//save all projects in local storage
 }
 function saveExit(){ //when user clicks save and exit
-	save() //runs save
+	save(); //runs save
 	document.location.href ='index.html';//changes page to index
 }
 
@@ -56,15 +56,33 @@ function strip(html){//returns string with any html tags removed
 function next(item){//increases step by one, but not above 4. Saves and reloads to update on page
 	if (item[5] < 4){
 		item[5]+=1;
-		save()
+		save();
 		location.reload();
 	}
 }
 function last(item){//decreases step by one, but not below 1. Saves and reloads to update on page
 	if (item[5] > 1){
 		item[5]-=1;
-		save()
+		save();
 		location.reload();
 	}
 }
 
+function RemoveTest(){//removes last task
+	if (project.tasks.length > 0){ //if a task exits
+		project.tasks.splice(project.tasks.length-1, 1);
+		save();
+		location.reload();
+	}	
+}
+
+function AddTest(){
+	if (project.tasks.length > 0){
+		project.tasks.push(["Task "+(project.tasks.length+1)+"","Description of task "+(project.tasks.length+1)+"","Definition of done "+(project.tasks.length+1)+"",(project.tasks.length+1),5,1,1]);
+	}
+	else{
+		project.tasks.push(["Task 1","Description of task 1","Definition of done 1",(project.tasks.length+1),2,1,1]);
+	}
+	save();
+	location.reload();
+}
